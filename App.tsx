@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from './components/Header';
 import Hero from './components/Hero';
 import Experience from './components/Experience';
 import Education from './components/Education';
@@ -8,7 +9,8 @@ import Contact from './components/Contact';
 
 const App: React.FC = () => {
   return (
-    <div className="w-full overflow-x-hidden">
+    <div className="w-full overflow-x-hidden relative">
+      <Header />
       <Hero />
       <Experience />
       <Education />

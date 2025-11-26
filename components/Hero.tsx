@@ -44,13 +44,13 @@ const Hero: React.FC = () => {
         {/* Main Content Container - Clean, no borders */}
         <div className="w-full max-w-lg relative text-center z-10">
           
-          <h1 className="text-4xl md:text-6xl lg:text-7xl text-brandBlack font-extrabold leading-tight mb-6">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl text-brandBlack font-extrabold leading-tight mb-6">
             {PERSONAL_INFO.name}
           </h1>
 
           <div className="w-16 h-1 bg-brandBlack mx-auto my-6"></div>
 
-          <h2 className="text-sm md:text-base font-medium text-gray-500 uppercase tracking-[0.2em] flex flex-col items-center gap-2">
+          <h2 className="text-[10px] md:text-xs font-medium text-gray-500 uppercase tracking-[0.2em] flex flex-col items-center gap-2">
             <span>Diretor de Arte</span>
             <span>e Inteligência Artificial</span>
           </h2>

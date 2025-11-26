@@ -3,21 +3,21 @@ import { SKILLS } from '../constants';
 
 const Skills: React.FC = () => {
   return (
-    <section className="py-24 px-6 bg-brandWhite text-brandBlack">
+    <section id="skills" className="py-24 px-6 bg-brandWhite text-brandBlack scroll-mt-20">
       <div className="max-w-4xl mx-auto">
-        <h3 className="text-4xl font-bold uppercase tracking-tighter mb-16 bg-black text-white px-6 py-2 inline-block border-2 border-black transition-all duration-300 hover:bg-white hover:text-black hover:tracking-widest cursor-default">
+        <h3 className="text-2xl font-bold uppercase tracking-tighter mb-16 bg-black text-white px-6 py-2 inline-block border-2 border-black transition-all duration-300 hover:bg-white hover:text-black hover:tracking-widest cursor-default">
           Conhecimentos
         </h3>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {SKILLS.map((cat, index) => (
             <div key={index} className="flex flex-col h-full">
-              <h4 className="text-xl font-extrabold uppercase mb-6 tracking-wide px-4 py-2 self-start">
+              <h4 className="text-base font-extrabold uppercase mb-6 tracking-wide px-4 py-2 self-start">
                 {cat.title}
               </h4>
               <ul className="space-y-4">
                 {cat.skills.map((skill, i) => (
-                  <li key={i} className="text-lg border-b border-gray-300 pb-2 last:border-0">
+                  <li key={i} className="text-sm border-b border-gray-300 pb-2 last:border-0">
                     {skill}
                   </li>
                 ))}
