@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
@@ -58,13 +59,28 @@ const Header: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         
-        {/* Logo / Brand */}
+        {/* Logo / Brand - Reveal Animation */}
         <a 
           href="#" 
           onClick={(e) => handleNavClick(e, '#')}
-          className="text-lg font-black tracking-tighter hover:opacity-70 transition-opacity"
+          className="group flex items-center text-lg font-black tracking-tighter cursor-pointer text-brandBlack"
+          aria-label="Anderson William Home"
         >
-          AW.
+          <span>A</span>
+          <span className="max-w-0 overflow-hidden opacity-0 group-hover:max-w-[80px] group-hover:opacity-100 transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] whitespace-nowrap">
+            nderson
+          </span>
+          
+          {/* Espaço dinâmico entre os nomes */}
+          <span className="max-w-0 overflow-hidden opacity-0 group-hover:max-w-[5px] group-hover:opacity-100 transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)]">
+            &nbsp;
+          </span>
+
+          <span>W</span>
+          <span className="max-w-0 overflow-hidden opacity-0 group-hover:max-w-[80px] group-hover:opacity-100 transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] whitespace-nowrap">
+            illiam
+          </span>
+          <span>.</span>
         </a>
 
         {/* Desktop Navigation */}
