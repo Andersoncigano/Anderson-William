@@ -1,20 +1,30 @@
 
 import React from 'react';
 import { EXPERIENCES } from '../constants';
+import { motion } from 'framer-motion';
 
 const Experience: React.FC = () => {
   return (
     <section id="experience" className="py-20 px-6 bg-brandWhite text-brandBlack scroll-mt-20">
       <div className="max-w-4xl mx-auto">
-        <h3 className="text-xl font-bold uppercase tracking-tighter mb-14 bg-black text-white px-5 py-1.5 inline-block border-2 border-black transition-all duration-500 hover:invert hover:tracking-widest cursor-default">
+        <motion.h3 
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          className="text-xl font-bold uppercase tracking-tighter mb-14 bg-black text-white px-5 py-1.5 inline-block border-2 border-black transition-all duration-500 hover:invert hover:tracking-widest cursor-default"
+        >
           Experiências
-        </h3>
+        </motion.h3>
 
         <div className="space-y-14">
           {EXPERIENCES.map((exp, index) => {
             return (
-              <div 
-                key={index} 
+              <motion.div 
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-10 group transition-all duration-500 ease-out relative p-5 -mx-5 rounded-2xl cursor-default border border-transparent hover:bg-black hover:shadow-2xl hover:-translate-y-1"
               >
                 {/* Barra lateral animada que fica BRANCA no hover */}
@@ -44,7 +54,7 @@ const Experience: React.FC = () => {
                     ))}
                   </ul>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>
