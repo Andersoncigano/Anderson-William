@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
 
           <div className="w-20 h-1 bg-brandBlack my-8 opacity-0 reveal-up delay-400"></div>
 
-          <h2 className="text-xs md:text-base lg:text-lg font-bold text-gray-700 uppercase tracking-[0.25em] flex flex-col items-start gap-3 opacity-0 reveal-up delay-600">
+          <h2 className="text-xs md:text-base lg:text-lg font-bold text-gray-700 uppercase tracking-[0.25em] flex flex-col items-start gap-3 opacity-0 reveal-up delay-600 transition-all duration-500 hover:bg-black hover:text-white p-3 -ml-3 rounded-lg cursor-default">
             <span>Diretor de Arte</span>
             <span>e Inteligência Artificial</span>
           </h2>
