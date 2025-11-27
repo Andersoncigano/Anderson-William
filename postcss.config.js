@@ -1,1 +1,6 @@
-// Configuração removida.
+export default {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+}

@@ -5,74 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anderson William | Senior Designer</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    
-    <!-- Tailwind CSS via CDN (Essencial para funcionar no navegador sem build) -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-            },
-            colors: {
-              brandBlack: '#050505',
-              brandWhite: '#F9FAFB',
-            },
-            animation: {
-              'slideUp': 'revealUp 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards',
-            }
-          }
-        }
-      }
-    </script>
-
-    <!-- CSS Crítico e Animações Globais -->
-    <style>
-      body {
-        background-color: #F9FAFB;
-        color: #050505;
-        font-family: 'Inter', sans-serif;
-      }
-      
-      html {
-        scroll-behavior: smooth;
-        scroll-padding-top: 100px;
-      }
-
-      /* DEFINIÇÃO ROBUSTA DE ANIMAÇÕES (CSS PURO) */
-      @keyframes revealUp {
-        0% { opacity: 0; transform: translateY(40px); }
-        100% { opacity: 1; transform: translateY(0); }
-      }
-
-      @keyframes floatAnimation {
-        0%, 100% { transform: translateY(0); }
-        50% { transform: translateY(-10px); }
-      }
-
-      /* Classes utilitárias para garantir a animação independente do Tailwind Config */
-      .reveal-up {
-        animation: revealUp 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
-      }
-      
-      .delay-200 { animation-delay: 0.2s; }
-      .delay-400 { animation-delay: 0.4s; }
-      .delay-600 { animation-delay: 0.6s; }
-      
-      .animate-float {
-        animation: floatAnimation 6s ease-in-out infinite;
-      }
-    </style>
   <script type="importmap">
 {
   "imports": {
-    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1",
     "react/": "https://aistudiocdn.com/react@^19.2.0/",
     "react": "https://aistudiocdn.com/react@^19.2.0",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
     "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "vite": "https://aistudiocdn.com/vite@^7.2.4"
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "vite": "https://aistudiocdn.com/vite@^7.2.4",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1"
   }
 }
 </script>
