@@ -35,11 +35,3 @@ export interface ServiceItem {
   description: string;
   iconName: 'PenTool' | 'Video' | 'Bot' | 'Layout';
 }
-
-export interface TestimonialItem {
-  id: number;
-  text: string;
-  author: string;
-  role: string;
-  company: string;
-}

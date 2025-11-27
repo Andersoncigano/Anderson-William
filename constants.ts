@@ -1,4 +1,4 @@
-import { ExperienceItem, EducationItem, CourseItem, SkillCategory, ProjectItem, ServiceItem, TestimonialItem } from './types';
+import { ExperienceItem, EducationItem, CourseItem, SkillCategory, ProjectItem, ServiceItem } from './types';
 
 export const PERSONAL_INFO = {
   name: "ANDERSON WILLIAM",
@@ -135,29 +135,5 @@ export const PORTFOLIO_ITEMS: ProjectItem[] = [
     category: "Identidade Visual", 
     imageUrl: "https://i.ibb.co/S76NPwbn/imagem-2025-11-27-130948329.png",
     link: "https://www.behance.net/gallery/211441727/Clave-Cafs-especiais"
-  }
-];
-
-export const TESTIMONIALS: TestimonialItem[] = [
-  {
-    id: 1,
-    text: "Anderson é um profissional excepcional, com um olhar criativo único e muita dedicação.",
-    author: "Nome do Cliente",
-    role: "Cargo",
-    company: "Empresa"
-  },
-  {
-    id: 2,
-    text: "Excelente trabalho, entregas no prazo e qualidade impecável.",
-    author: "Nome do Cliente",
-    role: "Cargo",
-    company: "Empresa"
-  },
-  {
-    id: 3,
-    text: "Recomendo fortemente para qualquer projeto de design e direção de arte.",
-    author: "Nome do Cliente",
-    role: "Cargo",
-    company: "Empresa"
   }
 ];
