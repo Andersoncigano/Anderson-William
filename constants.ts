@@ -85,7 +85,13 @@ export const SKILLS: SkillCategory[] = [
 
 // Placeholder portfolio items to simulate Behance feed
 export const PORTFOLIO_ITEMS: ProjectItem[] = [
-  { id: 1, title: "Identidade Visual Corporativa", category: "Branding", imageUrl: "https://picsum.photos/600/600?random=1" },
+  { 
+    id: 1, 
+    title: "Novembro Azul", 
+    category: "Campanha", 
+    imageUrl: "https://i.ibb.co/Df7z6K44/imagem-2025-11-27-093236433.png",
+    link: "https://www.behance.net/gallery/239057293/SOU-Saude-Ocupacional-Unimed-Novembro-Azul"
+  },
   { id: 2, title: "Social Media Campaign", category: "Marketing", imageUrl: "https://picsum.photos/600/800?random=2" },
   { id: 3, title: "Motion Graphics Reel", category: "Video", imageUrl: "https://picsum.photos/600/400?random=3" },
   { id: 4, title: "Editorial Layout", category: "Print", imageUrl: "https://picsum.photos/600/600?random=4" },

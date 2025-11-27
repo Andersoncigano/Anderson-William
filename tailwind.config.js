@@ -1,0 +1,1 @@
+// Configuração removida. O Tailwind está sendo carregado via CDN no index.html.
