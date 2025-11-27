@@ -1,4 +1,6 @@
-/* @tailwind directives removidas para funcionar com CDN */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
   background-color: #F9FAFB;
