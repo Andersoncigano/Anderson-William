@@ -25,26 +25,25 @@ const Header: React.FC = () => {
   return (
     <header 
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'
+        scrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         
         {/* Logo / Brand */}
-        <a href="#" className="text-xl font-black tracking-tighter hover:opacity-70 transition-opacity">
+        <a href="#" className="text-lg font-black tracking-tighter hover:opacity-70 transition-opacity">
           AW.
         </a>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex gap-8">
+        <nav className="hidden md:flex gap-4">
           {NAV_ITEMS.map((item) => (
             <a
               key={item.label}
               href={item.href}
-              className="text-xs uppercase font-bold tracking-widest text-gray-600 hover:text-black transition-colors relative group"
+              className="text-[10px] uppercase font-bold tracking-widest text-gray-600 px-4 py-2 rounded-md transition-all duration-300 hover:bg-black hover:text-white"
             >
               {item.label}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
             </a>
           ))}
         </nav>
@@ -63,13 +62,13 @@ const Header: React.FC = () => {
             isOpen ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full pointer-events-none'
           }`}
         >
-          <nav className="flex flex-col gap-8 text-center">
+          <nav className="flex flex-col gap-6 text-center">
             {NAV_ITEMS.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className="text-xl uppercase font-black tracking-widest hover:text-gray-500 transition-colors"
+                className="text-lg uppercase font-black tracking-widest hover:text-gray-500 transition-colors"
               >
                 {item.label}
               </a>

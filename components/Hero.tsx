@@ -32,25 +32,27 @@ const Hero: React.FC = () => {
           src={imgSrc} 
           onError={handleImageError}
           alt={PERSONAL_INFO.name} 
-          className="w-full h-full object-cover object-top grayscale transition-opacity duration-500"
+          className="w-full h-full object-contain object-bottom grayscale transition-opacity duration-500"
         />
         {/* Subtle gradient overlay at bottom to blend cutout if needed */}
         <div className="absolute inset-0 bg-gradient-to-t from-gray-50/20 to-transparent mix-blend-overlay pointer-events-none"></div>
       </div>
 
       {/* Right Column: Content */}
-      <div className="w-full md:w-1/2 h-1/2 md:h-full flex items-center justify-center p-6 md:p-12 bg-gray-50 relative">
+      <div className="w-full md:w-1/2 h-1/2 md:h-full flex items-center justify-center md:justify-start p-6 md:pl-0 bg-gray-50 relative">
         
-        {/* Main Content Container - Clean, no borders */}
-        <div className="w-full max-w-lg relative text-center z-10">
+        {/* Main Content Container - Shifted left with negative margin for tighter lockup */}
+        <div className="w-full max-w-2xl relative text-left z-10 md:-ml-20 lg:-ml-24">
           
-          <h1 className="text-2xl md:text-4xl lg:text-5xl text-brandBlack font-extrabold leading-tight mb-6">
+          {/* Name - Significantly Larger for Visual Hierarchy */}
+          <h1 className="text-5xl md:text-7xl lg:text-8xl text-brandBlack font-black leading-none mb-8 tracking-tighter">
             {PERSONAL_INFO.name}
           </h1>
 
-          <div className="w-16 h-1 bg-brandBlack mx-auto my-6"></div>
+          <div className="w-20 h-1 bg-brandBlack my-8"></div>
 
-          <h2 className="text-[10px] md:text-xs font-medium text-gray-500 uppercase tracking-[0.2em] flex flex-col items-center gap-2">
+          {/* Title - Increased size for balance */}
+          <h2 className="text-xs md:text-base lg:text-lg font-bold text-gray-700 uppercase tracking-[0.25em] flex flex-col items-start gap-3">
             <span>Diretor de Arte</span>
             <span>e Inteligência Artificial</span>
           </h2>
