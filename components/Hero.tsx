@@ -18,18 +18,21 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative w-full h-screen min-h-[600px] flex flex-col md:flex-row bg-gray-50 overflow-hidden">
+    <section className="relative w-full h-[100dvh] min-h-[600px] flex flex-col md:flex-row bg-gray-50 overflow-hidden">
       {/* Left Column: Image */}
       <div className="w-full md:w-1/2 h-1/2 md:h-full relative bg-gray-50 flex flex-col justify-end items-center">
         
         {/* Container da imagem */}
-        <div className="relative z-10 w-full h-full flex items-end justify-center pb-0">
+        <div className="relative z-10 w-full h-full flex items-end justify-center pb-0 cursor-default">
+          
+          {/* Imagem Principal (Base) - Otimizada para evitar cortes */}
           <img 
             src={imgSrc} 
             onError={handleImageError}
             alt={PERSONAL_INFO.name} 
-            className="max-h-[85%] md:max-h-[90%] w-auto object-contain object-bottom"
+            className="relative z-10 w-auto h-auto max-w-full max-h-[85%] md:max-h-[90%] object-contain object-bottom"
           />
+
         </div>
 
       </div>
