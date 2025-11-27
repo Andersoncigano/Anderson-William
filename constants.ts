@@ -106,7 +106,13 @@ export const PORTFOLIO_ITEMS: ProjectItem[] = [
     imageUrl: "https://i.ibb.co/1fF89kFG/imagem-2025-11-27-115752377.png",
     link: "https://www.behance.net/gallery/195141735/Dom-Pagamentos-Campanha"
   },
-  { id: 4, title: "Clave - Cafés Especiais", category: "Identidade Visual", imageUrl: "https://picsum.photos/600/600?random=4" },
+  { 
+    id: 4, 
+    title: "Clave - Cafés Especiais", 
+    category: "Identidade Visual", 
+    imageUrl: "https://i.ibb.co/vvY5XQyd/4.jpg",
+    link: "https://www.behance.net/gallery/211441727/Clave-Cafs-especiais"
+  },
   { id: 5, title: "Clave - Cafés Especiais", category: "Advertising", imageUrl: "https://picsum.photos/600/500?random=5" },
   { id: 6, title: "UI Experimentation", category: "Web Design", imageUrl: "https://picsum.photos/600/700?random=6" }
 ];
