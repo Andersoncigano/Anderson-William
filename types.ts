@@ -29,3 +29,17 @@ export interface ProjectItem {
   imageUrl: string;
   link?: string;
 }
+
+export interface ServiceItem {
+  title: string;
+  description: string;
+  iconName: 'PenTool' | 'Video' | 'Bot' | 'Layout';
+}
+
+export interface TestimonialItem {
+  id: number;
+  text: string;
+  author: string;
+  role: string;
+  company: string;
+}

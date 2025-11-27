@@ -1,8 +1,8 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
 const NAV_ITEMS = [
+  { label: 'Serviços', href: '#services' },
   { label: 'Experiências', href: '#experience' },
   { label: 'Educação', href: '#education' },
   { label: 'Conhecimento', href: '#skills' },

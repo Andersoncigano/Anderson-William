@@ -1,5 +1,4 @@
-
-import { ExperienceItem, EducationItem, CourseItem, SkillCategory, ProjectItem } from './types';
+import { ExperienceItem, EducationItem, CourseItem, SkillCategory, ProjectItem, ServiceItem, TestimonialItem } from './types';
 
 export const PERSONAL_INFO = {
   name: "ANDERSON WILLIAM",
@@ -8,6 +7,29 @@ export const PERSONAL_INFO = {
   email: "slavedreamers@gmail.com",
   objective: "Busco oportunidades de trabalho nas áreas de design gráfico, social media e motion design, com foco no desenvolvimento de habilidades técnicas e pessoais, especialmente na criação.",
 };
+
+export const SERVICES: ServiceItem[] = [
+  {
+    title: "Design Gráfico & Branding",
+    description: "Criação de identidades visuais marcantes, logotipos e materiais gráficos offline que comunicam a essência da marca.",
+    iconName: "PenTool"
+  },
+  {
+    title: "Motion Design & Vídeo",
+    description: "Produção de vídeos dinâmicos para redes sociais, edição e animação de elementos gráficos para dar vida ao conteúdo.",
+    iconName: "Video"
+  },
+  {
+    title: "Inteligência Artificial",
+    description: "Utilização de ferramentas avançadas de IA Generativa para criação de imagens, otimização de fluxos e brainstorming criativo.",
+    iconName: "Bot"
+  },
+  {
+    title: "Social Media",
+    description: "Desenvolvimento de peças criativas para redes sociais focadas em engajamento e conversão.",
+    iconName: "Layout"
+  }
+];
 
 export const EXPERIENCES: ExperienceItem[] = [
   {
@@ -113,5 +135,29 @@ export const PORTFOLIO_ITEMS: ProjectItem[] = [
     category: "Identidade Visual", 
     imageUrl: "https://i.ibb.co/S76NPwbn/imagem-2025-11-27-130948329.png",
     link: "https://www.behance.net/gallery/211441727/Clave-Cafs-especiais"
+  }
+];
+
+export const TESTIMONIALS: TestimonialItem[] = [
+  {
+    id: 1,
+    text: "Anderson é um profissional excepcional, com um olhar criativo único e muita dedicação.",
+    author: "Nome do Cliente",
+    role: "Cargo",
+    company: "Empresa"
+  },
+  {
+    id: 2,
+    text: "Excelente trabalho, entregas no prazo e qualidade impecável.",
+    author: "Nome do Cliente",
+    role: "Cargo",
+    company: "Empresa"
+  },
+  {
+    id: 3,
+    text: "Recomendo fortemente para qualquer projeto de design e direção de arte.",
+    author: "Nome do Cliente",
+    role: "Cargo",
+    company: "Empresa"
   }
 ];
