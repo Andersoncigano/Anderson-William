@@ -1,3 +1,4 @@
+
 import { ExperienceItem, EducationItem, CourseItem, SkillCategory, ProjectItem } from './types';
 
 export const PERSONAL_INFO = {
@@ -110,9 +111,7 @@ export const PORTFOLIO_ITEMS: ProjectItem[] = [
     id: 4, 
     title: "Clave - Cafés Especiais", 
     category: "Identidade Visual", 
-    imageUrl: "https://i.ibb.co/vvY5XQyd/4.jpg",
+    imageUrl: "https://i.ibb.co/S76NPwbn/imagem-2025-11-27-130948329.png",
     link: "https://www.behance.net/gallery/211441727/Clave-Cafs-especiais"
-  },
-  { id: 5, title: "Clave - Cafés Especiais", category: "Advertising", imageUrl: "https://picsum.photos/600/500?random=5" },
-  { id: 6, title: "UI Experimentation", category: "Web Design", imageUrl: "https://picsum.photos/600/700?random=6" }
+  }
 ];
