@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Mail, Linkedin, Instagram, Phone } from 'lucide-react';
+import { Mail, Linkedin, Instagram, Phone, Github } from 'lucide-react';
 import { PERSONAL_INFO } from '../constants';
 
 const Contact: React.FC = () => {
@@ -46,6 +46,12 @@ const Contact: React.FC = () => {
             icon={<span className="font-bold text-lg">Be</span>} 
             label="Behance" 
             color="hover:text-[#1769ff]"
+          />
+          <SocialLink 
+            href="https://github.com/" 
+            icon={<Github size={24} />} 
+            label="GitHub" 
+            color="hover:text-[#333]"
           />
         </div>
 
