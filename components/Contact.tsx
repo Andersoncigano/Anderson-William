@@ -1,10 +1,11 @@
+
 import React from 'react';
 import { Mail, Linkedin, Instagram, Phone } from 'lucide-react';
 import { PERSONAL_INFO } from '../constants';
 
 const Contact: React.FC = () => {
   return (
-    <section id="contact" className="py-20 px-6 bg-brandWhite text-brandBlack">
+    <section id="contact" className="py-20 px-6 bg-brandWhite text-brandBlack scroll-mt-20">
       <div className="max-w-4xl mx-auto text-center">
         <h3 className="text-xl font-bold uppercase tracking-tighter mb-10 bg-black text-white px-5 py-1.5 inline-block border-2 border-black transition-all duration-300 hover:bg-white hover:text-black hover:tracking-widest cursor-default">
           Vamos Conversar?
@@ -23,25 +24,25 @@ const Contact: React.FC = () => {
 
         <div className="flex justify-center gap-6 md:gap-10">
           <SocialLink 
-            href="#" 
+            href="https://www.linkedin.com/in/anderson-w-28a010a8/" 
             icon={<Linkedin size={24} />} 
             label="LinkedIn" 
             color="hover:text-[#0077b5]"
           />
           <SocialLink 
-            href="#" 
+            href="https://wa.me/5551993171197" 
             icon={<Phone size={24} />} 
             label="WhatsApp" 
             color="hover:text-[#25D366]"
           />
           <SocialLink 
-            href="#" 
+            href="https://www.instagram.com/andersonnhrs/" 
             icon={<Instagram size={24} />} 
             label="Instagram" 
             color="hover:text-[#E4405F]"
           />
           <SocialLink 
-            href="https://behance.net" 
+            href="https://www.behance.net/andersonnh" 
             icon={<span className="font-bold text-lg">Be</span>} 
             label="Behance" 
             color="hover:text-[#1769ff]"

@@ -4,19 +4,19 @@ import { PORTFOLIO_ITEMS } from '../constants';
 
 const Portfolio: React.FC = () => {
   return (
-    <section id="portfolio" className="py-20 px-6 bg-brandBlack text-brandWhite">
+    <section id="portfolio" className="py-20 px-6 bg-brandBlack text-brandWhite scroll-mt-20">
       <div className="max-w-6xl mx-auto">
         <div className="flex justify-between items-end mb-14 border-b border-white/20 pb-5">
           <h3 className="text-xl font-bold uppercase tracking-tighter">
-            Trabalhos
+            Portfólio
           </h3>
           <a 
-            href="https://www.behance.net/" 
+            href="https://www.behance.net/andersonnh" 
             target="_blank" 
             rel="noreferrer"
             className="hidden md:flex items-center gap-1.5 text-[9px] uppercase tracking-widest hover:text-gray-400 transition-colors"
           >
-            Ver Behance <ExternalLink size={12} />
+            Ver Portfólio <ExternalLink size={12} />
           </a>
         </div>
 
@@ -42,12 +42,12 @@ const Portfolio: React.FC = () => {
         
         <div className="mt-10 text-center md:hidden">
            <a 
-            href="https://www.behance.net/" 
+            href="https://www.behance.net/andersonnh" 
             target="_blank" 
             rel="noreferrer"
             className="inline-flex items-center gap-2 text-[9px] uppercase tracking-widest border border-white px-5 py-2.5 hover:bg-white hover:text-black transition-colors"
           >
-            Ver Behance Completo <ExternalLink size={12} />
+            Ver Portfólio Completo <ExternalLink size={12} />
           </a>
         </div>
       </div>

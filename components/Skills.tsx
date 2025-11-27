@@ -12,12 +12,12 @@ const Skills: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {SKILLS.map((cat, index) => (
             <div key={index} className="flex flex-col h-full">
-              <h4 className="text-sm font-extrabold uppercase mb-5 tracking-wide px-3 py-1.5 self-start">
+              <h4 className="text-lg font-extrabold uppercase mb-6 tracking-wide px-3 py-1.5 self-start">
                 {cat.title}
               </h4>
-              <ul className="space-y-3">
+              <ul className="space-y-4">
                 {cat.skills.map((skill, i) => (
-                  <li key={i} className="text-xs border-b border-gray-300 pb-1.5 last:border-0">
+                  <li key={i} className="text-sm border-b border-gray-300 pb-2 last:border-0">
                     {skill}
                   </li>
                 ))}

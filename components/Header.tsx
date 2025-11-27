@@ -22,6 +22,34 @@ const Header: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const targetId = href.replace('#', '');
+    
+    // Special handling for logo/top
+    if (targetId === '') {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+      return;
+    }
+
+    const element = document.getElementById(targetId);
+    if (element) {
+      const headerOffset = 100; // Altura para compensar o header fixo
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+      
+      setIsOpen(false);
+    }
+  };
+
   return (
     <header 
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
@@ -31,7 +59,11 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         
         {/* Logo / Brand */}
-        <a href="#" className="text-lg font-black tracking-tighter hover:opacity-70 transition-opacity">
+        <a 
+          href="#" 
+          onClick={(e) => handleNavClick(e, '#')}
+          className="text-lg font-black tracking-tighter hover:opacity-70 transition-opacity"
+        >
           AW.
         </a>
 
@@ -41,6 +73,7 @@ const Header: React.FC = () => {
             <a
               key={item.label}
               href={item.href}
+              onClick={(e) => handleNavClick(e, item.href)}
               className="text-[10px] uppercase font-bold tracking-widest text-gray-600 px-4 py-2 rounded-md transition-all duration-300 hover:bg-black hover:text-white"
             >
               {item.label}
@@ -67,7 +100,7 @@ const Header: React.FC = () => {
               <a
                 key={item.label}
                 href={item.href}
-                onClick={() => setIsOpen(false)}
+                onClick={(e) => handleNavClick(e, item.href)}
                 className="text-lg uppercase font-black tracking-widest hover:text-gray-500 transition-colors"
               >
                 {item.label}
