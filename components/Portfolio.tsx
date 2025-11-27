@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ExternalLink } from 'lucide-react';
 import { PORTFOLIO_ITEMS } from '../constants';
@@ -20,7 +21,8 @@ const Portfolio: React.FC = () => {
           </a>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        {/* Grid ajustado para manter 2 colunas em telas médias e grandes (Desktop) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {PORTFOLIO_ITEMS.map((item) => {
             // Conteúdo interno do card para evitar repetição
             const CardContent = () => (
