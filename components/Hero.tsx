@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
         
         <div className="w-full max-w-2xl relative text-left z-10 md:-ml-20 lg:-ml-24">
           
-          <h1 className="text-5xl md:text-7xl lg:text-8xl text-brandBlack font-black leading-none mb-8 tracking-tighter opacity-0 reveal-up delay-200">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl text-brandBlack font-black leading-none mb-8 tracking-tighter opacity-0 reveal-up delay-200 transition-all duration-500 hover:text-gray-600 hover:drop-shadow-xl hover:tracking-tight cursor-default">
             {PERSONAL_INFO.name}
           </h1>
 
