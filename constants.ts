@@ -99,7 +99,12 @@ export const PORTFOLIO_ITEMS: ProjectItem[] = [
     imageUrl: "https://i.ibb.co/0jrBhCG0/imagem-2025-11-27-110906087.png",
     link: "https://www.behance.net/andersonnh"
   },
-  { id: 3, title: "Motion Graphics Reel", category: "Video", imageUrl: "https://picsum.photos/600/400?random=3" },
+  { 
+    id: 3, 
+    title: "Motion Graphics Reel", 
+    category: "Video", 
+    imageUrl: "https://i.ibb.co/1fF89kFG/imagem-2025-11-27-115752377.png" 
+  },
   { id: 4, title: "Editorial Layout", category: "Print", imageUrl: "https://picsum.photos/600/600?random=4" },
   { id: 5, title: "Event Promo Materials", category: "Advertising", imageUrl: "https://picsum.photos/600/500?random=5" },
   { id: 6, title: "UI Experimentation", category: "Web Design", imageUrl: "https://picsum.photos/600/700?random=6" }
