@@ -22,7 +22,7 @@ const Services: React.FC = () => {
           transition={{ duration: 0.5 }}
           className="text-xl font-bold uppercase tracking-tighter mb-14 bg-black text-white px-5 py-1.5 inline-block border-2 border-black transition-all duration-300 hover:invert hover:tracking-widest cursor-default"
         >
-          O que faço
+          O que eu faço
         </motion.h3>
 
         <motion.div 
