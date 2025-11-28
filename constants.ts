@@ -135,5 +135,12 @@ export const PORTFOLIO_ITEMS: ProjectItem[] = [
     category: "Identidade Visual", 
     imageUrl: "https://i.ibb.co/S76NPwbn/imagem-2025-11-27-130948329.png",
     link: "https://www.behance.net/gallery/211441727/Clave-Cafs-especiais"
+  },
+  { 
+    id: 5, 
+    title: "Fábrica de Prompts", 
+    category: "Engenharia de Prompt / IA", 
+    imageUrl: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1000&auto=format&fit=crop",
+    link: "#"
   }
 ];

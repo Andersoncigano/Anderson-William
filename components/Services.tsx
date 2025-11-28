@@ -20,7 +20,7 @@ const Services: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-xl font-bold uppercase tracking-tighter mb-14 bg-black text-white px-5 py-1.5 inline-block border-2 border-black transition-all duration-500 hover:invert hover:tracking-widest cursor-default"
+          className="text-xl font-bold uppercase tracking-tighter mb-14 bg-black text-white px-5 py-1.5 inline-block border-2 border-black transition-all duration-300 hover:invert hover:tracking-widest cursor-default"
         >
           O que faço
         </motion.h3>
@@ -50,17 +50,20 @@ const Services: React.FC = () => {
                   hidden: { opacity: 0, y: 30 },
                   visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 40 } }
                 }}
-                className="group p-8 rounded-2xl bg-white border border-gray-100 transition-all duration-500 hover:shadow-2xl hover:border-black/10 hover:-translate-y-2 cursor-default hover:bg-black"
+                className="group p-8 rounded-2xl bg-white border border-gray-100 transition-all duration-300 ease-out hover:shadow-2xl hover:border-transparent hover:-translate-y-2 cursor-default hover:bg-black"
               >
+                {/* Icon Box: Fundo Cinza -> Branco no Hover */}
                 <div className="mb-6 inline-block p-3 rounded-xl bg-gray-50 text-black group-hover:bg-white group-hover:text-black transition-colors duration-300">
                   <IconComponent size={24} />
                 </div>
                 
+                {/* Título: Preto -> Branco no Hover */}
                 <h4 className="text-lg font-bold uppercase mb-3 tracking-tight group-hover:tracking-wide transition-all duration-300 group-hover:text-white">
                   {service.title}
                 </h4>
                 
-                <p className="text-sm text-gray-600 leading-relaxed group-hover:text-white transition-colors">
+                {/* Descrição: Cinza -> Branco no Hover */}
+                <p className="text-sm text-gray-600 leading-relaxed group-hover:text-gray-200 transition-colors duration-300">
                   {service.description}
                 </p>
               </motion.div>
