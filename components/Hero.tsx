@@ -1,7 +1,6 @@
-
 import React, { useState } from 'react';
 import { PERSONAL_INFO } from '../constants';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 
 // --- ÁREA DE EDIÇÃO DA FOTO ---
 const USER_IMAGE_URL = "https://i.ibb.co/zC8jtbr/sombra.png"; 
@@ -18,19 +17,19 @@ const Hero: React.FC = () => {
     }
   };
 
-  // Variantes de animação para orquestração
-  const containerVariants = {
+  // Variantes de animação apenas para o TEXTO
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
         staggerChildren: 0.2,
-        delayChildren: 0.3
+        delayChildren: 0.5
       }
     }
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 50 },
     visible: { 
       opacity: 1, 
@@ -41,24 +40,17 @@ const Hero: React.FC = () => {
 
   return (
     <section className="relative w-full h-[100dvh] min-h-[600px] flex flex-col md:flex-row bg-gray-50 overflow-hidden">
-      {/* Left Column: Image */}
-      <div className="w-full md:w-1/2 h-1/2 md:h-full relative bg-gray-50 flex flex-col justify-end items-center">
+      {/* Left Column: Image - TOTALMENTE ESTÁTICO */}
+      <div className="w-full md:w-1/2 h-1/2 md:h-full relative bg-gray-50 flex flex-col justify-end items-center overflow-hidden">
         
-        {/* Container da imagem */}
-        <motion.div 
-          initial={{ opacity: 0, scale: 0.9, y: 50 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-          className="relative z-10 w-full h-full flex items-end justify-center pb-0 cursor-default"
-        >
-          {/* Imagem Principal (Base) - Otimizada para evitar cortes */}
+        <div className="relative z-10 w-full h-full flex items-end justify-center pb-0 cursor-default">
           <img 
             src={imgSrc} 
             onError={handleImageError}
             alt={PERSONAL_INFO.name} 
             className="relative z-10 w-auto h-auto max-w-full max-h-[85%] md:max-h-[90%] object-contain object-bottom"
           />
-        </motion.div>
+        </div>
 
       </div>
 
@@ -82,7 +74,7 @@ const Hero: React.FC = () => {
           <motion.div 
             variants={{
               hidden: { width: 0, opacity: 0 },
-              visible: { width: 80, opacity: 1, transition: { duration: 0.8, delay: 0.8 } }
+              visible: { width: 80, opacity: 1, transition: { duration: 0.8 } }
             }}
             className="h-1 bg-brandBlack my-8"
           ></motion.div>
@@ -96,7 +88,7 @@ const Hero: React.FC = () => {
           </motion.h2>
         </motion.div>
 
-        {/* Background blobs com movimento fluido */}
+        {/* Background blobs */}
         <motion.div 
           animate={{ y: [0, -20, 0] }}
           transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
